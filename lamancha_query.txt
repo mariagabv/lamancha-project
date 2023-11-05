@@ -1,0 +1,42 @@
+# pip install sparqlwrapper
+# https://rdflib.github.io/sparqlwrapper/
+
+import sys
+from SPARQLWrapper import SPARQLWrapper, JSON
+
+endpoint_url = "https://query.wikidata.org/sparql"
+
+query = """
+
+SELECT ?person ?genderLabel ?personLabel ?birthDate ?placeBirthLabel ?description 
+WHERE
+{
+  ?person wdt:P19 ?placeBirth.  # Lugar de nacimiento
+  ?person wdt:P31 wd:Q5.  # Instancia de: Humano
+  ?placeBirth wdt:P131 wd:Q54932.  # Municipios de la provincia de Ciudad Real
+ 
+  OPTIONAL { ?person wdt:P569 ?birthDate. }  # Fecha de nacimiento
+  OPTIONAL { ?person schema:description ?description. }  # Descripción de la persona
+  OPTIONAL { ?person wdt:P21 ?gender. }  # Género
+  FILTER (LANGMATCHES(LANG(?description), "es"))
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "es". }
+}
+
+
+
+"""
+
+
+def get_results(endpoint_url, query):
+    user_agent = "WDQS-example Python/%s.%s" % (sys.version_info[0], sys.version_info[1])
+    # TODO adjust user agent; see https://w.wiki/CX6
+    sparql = SPARQLWrapper(endpoint_url, agent=user_agent)
+    sparql.setQuery(query)
+    sparql.setReturnFormat(JSON)
+    return sparql.query().convert()
+
+
+results = get_results(endpoint_url, query)
+
+for result in results["results"]["bindings"]:
+    print(result)

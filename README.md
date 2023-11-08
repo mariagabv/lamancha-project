@@ -1,2 +1,2 @@
 # lamancha-project
-Programming Techniques for NLP 
+This is the final project for Programming Techniques for NLP. Our objective is to explore data extracted from Wikidata and develop a trivia quiz. The quiz questions will concentrate on the occupation of individuals appearing on Wikidata according to our conditions (all individuals born in the Province of Ciudad Real throught history). Furthermore, we will create functions to extract new information that can be used as questions (e.g. What is the percentage of women in the dataset? Which zodiac sign is the most successful? How many people are associated with the world of sports?).

@@ -1,4 +1,5 @@
 person,genderLabel,personLabel,birthDate,placeBirthLabel,description
+"http://www.wikidata.org/entity/Q32442,masculino,Ángel Ayala,1867-03-01T00:00:00Z,Ciudad Real,""clérigo jesuita, pedagogo y propagandista católico español"""
 http://www.wikidata.org/entity/Q5973254,masculino,Leonardo de la Peña Díaz,1875-09-06T00:00:00Z,Ciudad Real (ciudad),cirujano español
 http://www.wikidata.org/entity/Q26421088,masculino,Javier Alberola Rojas,1991-06-22T00:00:00Z,Ciudad Real (ciudad),Árbitro de fútbol español
 http://www.wikidata.org/entity/Q55873286,masculino,Ramón Porgueres Hernández,1928-02-01T00:00:00Z,Ciudad Real (ciudad),militar español
@@ -8,7 +9,6 @@ http://www.wikidata.org/entity/Q21479968,masculino,Antonio Espinosa Cerrato,1959
 http://www.wikidata.org/entity/Q51765812,masculino,Eulogio Paz Fernández,1952-05-15T00:00:00Z,Fernán Caballero,activista español
 http://www.wikidata.org/entity/Q26430790,masculino,Valentín Pizarro Gómez,1981-08-14T00:00:00Z,Ciudad Real,Árbitro de fútbol español
 http://www.wikidata.org/entity/Q27755769,femenino,Carmen Quintanilla,1954-05-11T00:00:00Z,Ciudad Real,política española
-"http://www.wikidata.org/entity/Q32442,masculino,Ángel Ayala,1867-03-01T00:00:00Z,Ciudad Real,""clérigo jesuita, pedagogo y propagandista católico español"""
 http://www.wikidata.org/entity/Q352515,masculino,José Castillejo,1877-01-01T00:00:00Z,Ciudad Real,jurista español
 http://www.wikidata.org/entity/Q469488,masculino,Manuel Marín,1949-10-21T00:00:00Z,Ciudad Real,político español
 http://www.wikidata.org/entity/Q531056,masculino,Alonso de Estrada,1470-01-01T00:00:00Z,Ciudad Real,tesorero y gobernador castellano. Hijo natural de Fernando el Católico

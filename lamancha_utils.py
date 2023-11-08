@@ -3,7 +3,7 @@ import re
 from datetime import datetime
 
 
-df = pd.read_csv("C:\\Users\\usuario\\Desktop\\ehu_python\\5_WikiData\\lamancha_project\\lamancha.csv")
+df = pd.read_csv("C:\\Users\\usuario\\Desktop\\lamancha-project\\data\\lamancha.csv")
 
 
 
